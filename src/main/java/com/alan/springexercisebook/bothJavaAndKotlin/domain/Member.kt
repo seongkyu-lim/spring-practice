@@ -8,11 +8,10 @@ import lombok.NoArgsConstructor
 import lombok.RequiredArgsConstructor
 
 @Entity
-@NoArgsConstructor
 public class Member (
-    var login: String,
-    var firstname: String,
-    var lastname: String,
+    var login: String = "",
+    var firstname: String = "",
+    var lastname: String = "",
     var description: String? = null,
     @Id @GeneratedValue var id: Long? = null){
 

@@ -13,7 +13,6 @@ import org.springframework.transaction.annotation.Transactional;
 public class AccountService {
 
     private final AccountRepository accountRepository;
-    private final TeamRepository teamRepository;
 
     @Transactional
     public void addAccount(String email, String name, String password, Team team){

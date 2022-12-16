@@ -13,18 +13,18 @@ public class TeamService {
     private final TeamRepository teamRepository;
 
     @Transactional
-    public void removeTeam(Long id){
-        teamRepository.deleteById(id);
+    public void removeTeam(String name){
+        teamRepository.deleteByName(name);
     }
 
     @Transactional
-    public void addTeam(String name, Integer number){
+    public Team addTeam(String name, Integer number){
         Team team = Team.builder()
                 .name(name)
                 .number(number)
                 .build();
 
-        teamRepository.save(team);
+        return teamRepository.save(team);
     }
 
 }

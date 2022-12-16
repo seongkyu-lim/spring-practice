@@ -1,4 +1,4 @@
-package com.alan.springexercisebook.domain
+package com.alan.springexercisebook.bothJavaAndKotlin.domain
 
 import jakarta.persistence.Entity
 import jakarta.persistence.GeneratedValue

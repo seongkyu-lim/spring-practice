@@ -1,6 +1,6 @@
-package com.alan.springexercisebook.service;
+package com.alan.springexercisebook.bothJavaAndKotlin.service;
 
-import com.alan.springexercisebook.domain.Member;
+import com.alan.springexercisebook.bothJavaAndKotlin.domain.Member;
 import org.springframework.stereotype.Service;
 
 @Service
